@@ -30,7 +30,7 @@ const Login = () => {
                 const user = { email }
                 console.log(loggedUser)
 
-                const url = 'http://localhost:5000/jwt'
+                const url = 'https://fusion-electro-hub-server-side-qou1w1gc1.vercel.app/jwt'
                 axios.post(url, user, { withCredentials: true })
                     .then(res => {
                         console.log(res.data)

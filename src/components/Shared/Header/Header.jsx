@@ -58,8 +58,8 @@ const Header = () => {
             .catch(error => console.log(error.message))
     }
 
-    axios.get('http://localhost:5000/carts',{withCredentials: true})
-    // fetch('http://localhost:5000/carts',{
+    axios.get('https://fusion-electro-hub-server-side-qou1w1gc1.vercel.app/carts',{withCredentials: true})
+    // fetch('https://fusion-electro-hub-server-side-qou1w1gc1.vercel.app/carts',{
     //     method: "GET",
     //     credentials: "include"
     // })
@@ -81,7 +81,7 @@ const Header = () => {
             confirmButtonText: 'Yes, delete it!'
         }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`http://localhost:5000/carts/${id}`, {
+                fetch(`https://fusion-electro-hub-server-side-qou1w1gc1.vercel.app/carts/${id}`, {
                     method: 'DELETE'
                 })
                     .then(res => res.json())
