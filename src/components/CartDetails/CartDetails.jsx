@@ -10,7 +10,7 @@ const CartDetails = () => {
     const [total, setTotal] = useState([])
     const [carts, setCarts] = useState([])
 
-    const url = 'https://fusion-electro-hub-server-side-qou1w1gc1.vercel.app/carts'
+    const url = 'https://fusion-electro-hub-server-side-55u5ihqpz.vercel.app/carts'
 
     axios.get(url, { withCredentials: true })
         .then(data => setCarts(data.data))
@@ -32,7 +32,7 @@ const CartDetails = () => {
         }).then((result) => {
             if (result.isConfirmed) {
 
-                fetch('https://fusion-electro-hub-server-side-qou1w1gc1.vercel.app/cartshttps://fusion-electro-hub-server-side-qou1w1gc1.vercel.app/carts', {
+                fetch('https://fusion-electro-hub-server-side-55u5ihqpz.vercel.app/carts', {
                     method: "DELETE"
                 })
                     .then(res => console.log(res.json))

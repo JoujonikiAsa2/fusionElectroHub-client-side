@@ -26,7 +26,7 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <HomePage></HomePage>,
-        loader: () => fetch('https://fusion-electro-hub-server-side-qou1w1gc1.vercel.app/products')
+        loader: () => fetch('https://fusion-electro-hub-server-side-55u5ihqpz.vercel.app/products')
       },
       {
         path: '/signIn',
@@ -43,27 +43,27 @@ const router = createBrowserRouter([
       {
         path: '/products',
         element: <PrivateRoute><Products></Products></PrivateRoute>,
-        loader: () => fetch("https://fusion-electro-hub-server-side-qou1w1gc1.vercel.app/products")
+        loader: () => fetch("https://fusion-electro-hub-server-side-55u5ihqpz.vercel.app/products")
       },
       {
         path: '/details/:id',
         element: <PrivateRoute><ProductDetails></ProductDetails></PrivateRoute>,
-        loader: ({params}) => fetch(`https://fusion-electro-hub-server-side-qou1w1gc1.vercel.app/products/${params.id}`)
+        loader: ({params}) => fetch(`https://fusion-electro-hub-server-side-55u5ihqpz.vercel.app/products/${params.id}`)
       },
       {
         path: '/cartDetails',
         element: <PrivateRoute><CartDetails></CartDetails></PrivateRoute>,
-        loader: () => fetch(`https://fusion-electro-hub-server-side-qou1w1gc1.vercel.app/carts`)
+        loader: () => fetch(`https://fusion-electro-hub-server-side-55u5ihqpz.vercel.app/carts`)
       },
       {
         path: '/update/:id',
         element: <PrivateRoute><UpdateProduct></UpdateProduct></PrivateRoute>,
-        loader: ({ params }) => fetch(`https://fusion-electro-hub-server-side-qou1w1gc1.vercel.app/products/${params.id}`)
+        loader: ({ params }) => fetch(`https://fusion-electro-hub-server-side-55u5ihqpz.vercel.app/products/${params.id}`)
       },
       {
         path: '/products/brand/:brandName',
         element: <Products></Products>,
-        loader: ({ params }) => fetch(`https://fusion-electro-hub-server-side-qou1w1gc1.vercel.app/products/brand/${params.brandName}`)
+        loader: ({ params }) => fetch(`https://fusion-electro-hub-server-side-55u5ihqpz.vercel.app/products/brand/${params.brandName}`)
       },
     ]
   },

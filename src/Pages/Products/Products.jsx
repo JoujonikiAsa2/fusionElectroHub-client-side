@@ -15,7 +15,7 @@ const Products = () => {
     const [mainProducts, setMainProducts] = useState([])
 
     useEffect(() => {
-        axios.get('https://fusion-electro-hub-server-side-qou1w1gc1.vercel.app/products', { withCredentials: true })
+        axios.get('https://fusion-electro-hub-server-side-55u5ihqpz.vercel.app/products', { withCredentials: true })
             .then(res => setMainProducts(res.data))
     })
     // const id = useParams()
