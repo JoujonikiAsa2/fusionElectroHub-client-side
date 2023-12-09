@@ -1,4 +1,4 @@
-# Project category: Technology and Electronics
+## Project category: Technology and Electronics
 
 This project creates a smooth online shopping experience. 
 
@@ -8,7 +8,12 @@ This project creates a smooth online shopping experience.
 - Make purchases with ease. 
 - Enjoy a stress-free shopping journey, from choosing products to secure transactions.
 
-# We can add extra features like
+## Technologies Used
+
+**Frontend:** HTML5, CSS3, JavaScript, React.js, Tailwind CSS frameworks </br> 
+**Backend:** Node.js Express.js MongoDB </br> 
+
+## We can add extra features like
 
 - Fetured Product
 - Out Partners 
@@ -16,7 +21,7 @@ This project creates a smooth online shopping experience.
 - Contact
 - Feed Back
 
-# The Live Link of the project
+### The Live Link of the project
 
 ### **https://fusionelectrohub.web.app/**
 
